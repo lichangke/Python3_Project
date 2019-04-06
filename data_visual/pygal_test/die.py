@@ -7,11 +7,10 @@
 @Version :   1.0
 @Contact :   leacock1991@gmail.com
 @License :   
-@Desc    :   None
+@Desc    :   骰子类
 '''
 
 # here put the import lib
-
 
 from random import randint
 

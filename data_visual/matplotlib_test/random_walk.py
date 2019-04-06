@@ -13,7 +13,6 @@
 # here put the import lib
 from random import choice
 
-
 class RandomWalk():
     """一个生成随机漫步数据的类"""
 

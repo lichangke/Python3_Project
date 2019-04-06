@@ -7,7 +7,7 @@
 @Version :   1.0
 @Contact :   leacock1991@gmail.com
 @License :   
-@Desc    :   模拟掷骰子
+@Desc    :   模拟掷骰子并柱状图显示点数出现次数
 '''
 
 # here put the import lib
@@ -37,7 +37,7 @@ for value in range(2, max_result+1):
 # 对结果进行可视化
 hist = pygal.Bar()  # Basic simple bar graph:
 
-hist.title = "Results of rolling a D6 and a D10 50,000  times."
+hist.title = "Results of rolling a D8 and a D8 50,000  times."
 x_labels = set()
 for i in range(1,die_1.num_sides+1):
     for j in range(1, die_2.num_sides+1):

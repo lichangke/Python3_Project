@@ -9,7 +9,6 @@
 @License :   
 @Desc    :   绘制折线图
 '''
-
 # here put the import lib
 # 导入了模块pyplot 
 
@@ -33,11 +32,6 @@ plt.ylabel( "Square of Value", fontsize = 14 )
 plt.tick_params( axis = 'both', labelsize = 14 , colors = 'r' ) # axis 将参数应用于哪个轴
 
 plt.show()  
-
-
-
-
-
 '''
 打开matplotlib查看器， 并显示绘制的图形
 '''

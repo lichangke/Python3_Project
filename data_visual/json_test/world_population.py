@@ -7,7 +7,7 @@
 @Version :   1.0
 @Contact :   leacock1991@gmail.com
 @License :   
-@Desc    :   处理JSON格式
+@Desc    :   对json文件格式的数据处理，通过pygal绘制世界人口地图
 '''
 
 # here put the import lib

@@ -1,3 +1,19 @@
+
+#!/usr/bin/env python
+# -*- encoding: utf-8 -*-
+'''
+@File    :   rw_visual.py
+@Time    :   2019/04/07 00:56:52
+@Author  :   leacoder
+@Version :   1.0
+@Contact :   leacock1991@gmail.com
+@License :   
+@Desc    :   循环生成随机漫步数据并显示
+'''
+
+# here put the import lib
+
+
 import matplotlib.pyplot as plt
 from random_walk import RandomWalk
 

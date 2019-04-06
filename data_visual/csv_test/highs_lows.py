@@ -7,7 +7,7 @@
 @Version :   1.0
 @Contact :   leacock1991@gmail.com
 @License :   
-@Desc    :   处理CSV文件
+@Desc    :   处理CSV文件数据，matplotlib绘制最高温度最低温度折线图
 '''
 
 # here put the import lib
