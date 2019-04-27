@@ -1,25 +1,4 @@
 #!/usr/bin/env python
-# coding=UTF-8
-'''
-@Description: In User Settings Edit
-@Author: your name
-@LastEditors: Please set LastEditors
-@Date: 2019-04-27 00:15:01
-@LastEditTime: 2019-04-27 00:40:28
-'''
-#!/usr/bin/env python
-# coding=UTF-8
-from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
-import pygal
-import requests
-'''
-@Description: In User Settings Edit
-@Author: your name
-@LastEditors: Please set LastEditors
-@Date: 2019-04-26 23:23:51
-@LastEditTime: 2019-04-27 00:15:00
-'''
-#!/usr/bin/env python
 # -*- encoding: utf-8 -*-
 '''
 @File    :   python_repos.py
@@ -32,7 +11,9 @@ import requests
 '''
 
 # here put the import lib
-
+from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
+import pygal
+import requests
 
 # 执行API调用并存储响应
 url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
@@ -51,7 +32,7 @@ print("Repositories returned:", len(repo_dicts))
 print("\nSelected information about first repository:")
 
 names, stars, plot_dicts = [], [], []
-
+# 遍历仓库提取数据
 for repo_dict in repo_dicts:
     names.append(repo_dict['name'])
     print('\nName:', repo_dict['name'])
