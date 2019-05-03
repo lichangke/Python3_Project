@@ -1,0 +1,14 @@
+<p>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
+    <a href="{% url 'learning_logs:topics' %}">Topics</a> -
+    <!--在Django身份验证系统中， 每个模板都可使用变量user ， 这个变量有一个is_authenticated 属性： 如果用户已登录， 该属性将为True ， 否则为False 。-->
+    {% if user.is_authenticated %}
+    Hello, {{ user.username }}.
+    <a href="{% url 'users:logout' %}">log out</a>
+    {% else %}
+    <a href="{% url 'users:register' %}">register</a> -
+    <a href="{% url 'users:login' %}">log in</a>
+    {% endif %}
+</p>
+
+{% block content %}{% endblock content %}
