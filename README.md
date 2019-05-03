@@ -19,3 +19,14 @@ Get more information from: [https://www.jianshu.com/p/c3ed2a46e09e](https://www.
 Python编程从入门到实践:Web API获取数据并可视化
 
 Get more information from: [https://www.jianshu.com/p/f2ee55093336](https://www.jianshu.com/p/f2ee55093336)
+
+## learning_log
+[learning_log](https://github.com/lichangke/Python3_Project/tree/master/learning_log)
+
+Python编程从入门到实践:Web应用程序 - Django入门
+
+Python编程从入门到实践:Web应用程序 - 用户账户
+
+Get more information from: [https://www.jianshu.com/p/b3267d16c245](https://www.jianshu.com/p/b3267d16c245)
+
+Get more information from: [https://www.jianshu.com/p/2de77bd76310](https://www.jianshu.com/p/2de77bd76310)
