@@ -1,0 +1,45 @@
+{% extends "learning_logs/base.html" %}
+{% block header %}
+<h1>Topics</h1>
+{% endblock header %}
+{% block content %}
+<ul>
+    {% for topic in topics %}
+    <li>
+        <h3>
+            <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a>
+        </h3>
+    </li>
+    {% empty %}
+    <li>No topics have been added yet.</li>
+    {% endfor %}
+</ul>
+<h3><a href="{% url 'learning_logs:new_topic' %}">Add new topic</h3>
+{% endblock content %}
+
+<!--
+{\% extends "learning_logs/base.html" %\}
+<!使用标签\{\% extends \%\} 来继承base.html，>
+
+{\% block content %\}
+<p>Topics</p>
+<ul>
+    {\% for topic in topics %\}
+    
+    <!用了一个相当于for 循环的模板标签， 它遍历字典context 中的列表topics>
+    <li>
+        <a href="{\% url 'learning_logs:topic' topic.id %\}">{{ topic }}</a>
+    </li>
+    <!在模板中打印变量， 需要将变量名用双花括号括起来>
+    {\% empty %\} <!注意 {% 没有空格>
+    <!使用了模板标签\{\% empty \%\} ， 它告诉Django在列表topics 为空时该怎么办>
+    <li>No topics have been added yet.</li>
+    {\% endfor %\}
+    <!必须使用\{\% endfor \%\} 标签来显式地指出其结束位置>
+
+</ul>
+
+<a href="{% url 'learning_logs:new_topic' %}">Add a new topic:</a>
+
+{\% endblock content %\}
+-->

@@ -1,0 +1,31 @@
+{% extends "learning_logs/base.html" %}
+{% load bootstrap3 %}
+{% block header %}
+<h2>Add a new topic:</h2>
+{% endblock header %}
+{% block content %}
+<form action="{% url 'learning_logs:new_topic' %}" method='post' class="form">
+    {% csrf_token %} 
+    {% bootstrap_form form %}
+    {% buttons %}
+    <button name="submit" class="btn btn-primary">add topic</button>
+    {% endbuttons %}
+</form>
+{% endblock content %}
+<!--
+
+{\% extends "learning_logs/base.html" %\}
+
+{\% block content %\}
+
+<p>Add a new topic:</p>
+<定义了一个HTML表单>
+<实参action 告诉服务器将提交的表单数据发送到哪里， 这里我们将它发回给视图函数new_topic() 。 实参method 让浏览器以POST请求的方式提交数据。>
+<form action="{% url 'learning_logs:new_topic' %}" method='post'>  
+    {\% csrf_token %\} <防止攻击者利用表单来获得对服务器未经授权的访问>
+    {{ form.as_p }} <显示表单修饰符as_p 让Django以段落格式渲染所有表单元素， 这是一种整洁地显示表单的简单方式。>
+    <button name="submit">add topic</button> <Django不会为表单创建提交按钮， 因此定义了一个这样的按钮。>
+</form>
+
+{\% endblock content %\}
+-->
