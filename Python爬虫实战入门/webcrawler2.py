@@ -1,4 +1,4 @@
-from urllib import request
+# from urllib import request
 import random, socket,urllib
 '''
 requests库的基本使用
@@ -9,9 +9,9 @@ HTTP头部信息的模拟
 url = 'http://httpbin.org/get'
 user_agent_list = [ "My user agent 01", "My user agent 02", "My user agent 03","My user agent 04"]
 for i in range(5):
-    req = request.Request(url=url, headers={"User-Agent": random.choice(user_agent_list)}, method='GET')
+    req = urllib.request.Request(url=url, headers={"User-Agent": random.choice(user_agent_list)}, method='GET')
     try:
-        response = request.urlopen(req,timeout=5)
+        response = urllib.request.urlopen(req,timeout=5)
         print(response.read().decode('utf-8'))
     except urllib.error.URLError as e:
         if isinstance(e.reason, socket.timeout):

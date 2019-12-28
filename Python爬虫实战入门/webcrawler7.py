@@ -4,11 +4,9 @@ from bs4 import BeautifulSoup
 '''
 Beautiful Soup 使用
 Beautiful Soup：https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html
-
+Python I/O：https://docs.python.org/zh-cn/3/library/io.html
 获取 https://book.douban.com/top250 top250的书本信息
 '''
-
-
 def get_data_from_web(url):
     """
     获取url链接中书本信息
@@ -31,8 +29,6 @@ def get_data_from_web(url):
         book_dict["author"] = table.find(class_="pl").string.split("/")[0]
         books_list.append(book_dict)
     return books_list
-
-
 def save_data(books_data,save_name):
     """
     将书本信息保存到 save_name 文件中
@@ -45,8 +41,6 @@ def save_data(books_data,save_name):
         for book in books_data:
             index += 1
             f.write("{:0>3}:《{}》作者:{} {}\r".format(index, book.get("name"),book.get("author"),book.get("href")))
-
-
 if __name__ == '__main__':
     top250_books_info = list()
     for i in range(10):

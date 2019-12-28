@@ -1,10 +1,11 @@
-# urllib： https://docs.python.org/zh-cn/3/library/urllib.html
+
 
 from urllib import request   # 打开和读取 URL
 from urllib import parse    # 用于解析 URL
 
 '''
 urllib 简单使用演示
+urllib： https://docs.python.org/zh-cn/3/library/urllib.html
 '''
 
 # 演示 request 打开和读取 URL
